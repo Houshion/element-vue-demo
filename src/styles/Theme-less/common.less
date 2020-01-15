@@ -1,0 +1,527 @@
+@import 'var.less';
+@import 'flex.less';
+@import 'fontSize.less';
+@import 'marginPadding.less';
+
+i{
+    font-style: initial;
+}
+
+/**************************** color **********************/
+
+.grey {
+    color: @grey;
+}
+
+.red {
+    color: @red;
+}
+
+.pink {
+    color: @pink;
+}
+
+.purple {
+    color: @purple;
+}
+
+.blue {
+    color: @blue;
+}
+
+.green {
+    color: @green;
+}
+
+.yellow {
+    color: @yellow;
+}
+
+.orange {
+    color: @orange;
+}
+
+.deep-orange {
+    color: @deep-orange;
+}
+
+.black {
+    color: @black;
+}
+
+.white {
+    color: @white;
+}
+
+.golden {
+    color: @golden;
+}
+
+.cccc {
+    color: @ccc;
+}
+
+.c333 {
+    color: @333;
+}
+
+.c666 {
+    color: @666;
+}
+
+.c999 {
+    color: @999;
+}
+
+.c7979 {
+    color: @7979;
+}
+
+.cf7f7 {
+    color: @f7f7;
+}
+
+.cf7f7-bg {
+    background-color: @f7f7;
+}
+
+.c999-bg {
+    background-color: @999;
+}
+
+.bg-333 {
+    background-color: @333;
+}
+
+.theme {
+    color: @theme;
+}
+.c-eee {
+    color: @eee;
+}
+.c-009688 {
+    color: @009688;
+}
+
+.c-12cafe {
+    color: @12cafe;
+}
+
+.c-ee3346 {
+    color: @ee3346;
+}
+
+.c-6800cf {
+    color: @6800cf;
+}
+
+.c-ffcb51 {
+    color: @ffcb51;
+}
+
+.c-06c09b {
+    color: @06c09b;
+}
+
+.c-eaedf1 {
+    color: @eaedf1;
+}
+
+.c-20222a {
+    color: @20222a;
+}
+
+.theme-blue {
+    color: @theme-blue;
+}
+
+/************************ background color **********************/
+
+.grey-bg {
+    background-color: @grey;
+}
+
+.red-bg {
+    background-color: @red;
+}
+
+.pink-bg {
+    background-color: @pink;
+}
+
+.purple-bg {
+    background-color: @purple;
+}
+
+.blue-bg {
+    background-color: @blue;
+}
+
+.green-bg {
+    background-color: @green;
+}
+
+.yellow-bg {
+    background-color: @yellow;
+}
+
+.orange-bg {
+    background-color: @orange;
+}
+
+.deep-orange-bg {
+    background-color: @deep-orange;
+}
+
+.black-bg {
+    background-color: @black;
+}
+
+.white-bg {
+    background-color: @white;
+}
+
+.theme-bg {
+    background-color: @theme;
+}
+
+.c-009688-bg {
+    background-color: @009688;
+}
+
+.c-12cafe-bg {
+    background-color: @12cafe;
+}
+
+.c-ee3346-bg {
+    background-color: @ee3346;
+}
+
+.c-6800cf-bg {
+    background-color: @6800cf;
+}
+
+.c-ffcb51-bg {
+    background-color: @ffcb51;
+}
+
+.c-06c09b-bg {
+    background-color: @06c09b;
+}
+
+.c-eaedf1-bg {
+    background-color: @eaedf1;
+}
+
+.c-20222a-bg {
+    background-color: @20222a;
+}
+
+.theme-blue-bg {
+    background-color: @theme-blue;
+}
+.c-eee-bg {
+    background-color: @eee;
+}
+
+/******************* display *************/
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+/******************** 边框 ****************/
+
+.border {
+    border: 1px solid @border-color;
+}
+
+.border-b {
+    border-bottom: 1px solid @border-color;
+}
+
+.border-t {
+    border-top: 1px solid @border-color;
+}
+
+.border-l {
+    border-left: 1px solid @border-color;
+}
+
+.border-r {
+    border-right: 1px solid @border-color;
+}
+
+/**************************** reset **********************/
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+.fixed-b{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.fixed-t{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sweper-progressbar {
+    background: #e60012;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left top;
+}
+.cursor
+{
+    cursor: pointer;
+}
+/*超出隐藏*/
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/********** Image *********/
+
+.responsive-img {
+    display: block; // max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/********** Width / Height *********/
+
+.margin-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+/********** Float *********/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/********** Align *********/
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+.vertical-center {
+    vertical-align: middle,
+}
+
+.vertical-bottom {
+    vertical-align: bottom;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/********** Border radius *********/
+
+.radius-5 {
+    border-radius: 5px;
+}
+.radius-10
+{
+    border-radius: 10px;
+}
+.border-clear {
+    border: initial !important;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.h50 {
+    height: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+.w100-important
+{
+    width: 100% !important;
+}
+.w50 {
+    width: 50%;
+}
+.line-h1_5
+{
+    line-height: 150%;
+}
+.line-h2 {
+    line-height: 200%
+}
+.el-button
+{
+    .el-loading-spinner
+    {
+        margin-top: -10px;
+        .circular
+        {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+// .tableHeader
+// {
+//     background: #eee !important;
+// }
+.el-table th
+{
+    background: #eee !important;
+}
+.batch
+{
+    .el-input--medium .el-input__inner
+    {
+        height: 28px;
+        line-height: 28px;
+    }
+    .el-input--medium .el-input__icon
+    {
+        height: 28px;
+        line-height: 28px;
+    }
+    .el-select-dropdown__item
+    {
+        height: 28px;
+        line-height: 28px;
+    }
+}
+.el-main
+{
+    position: relative;
+}
+.dialog-fullscreen
+{
+    position: absolute;
+}
+.el-dialog__close
+{
+    font-size: 24px;
+}
+table
+{
+    border-collapse:collapse;
+}
+.table-info
+{
+    border:1px solid #e5e5e5;
+    .avatar
+    {
+        vertical-align: middle;
+        text-align: center;
+        img
+        {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: scale-down;
+            border: 1px solid #e5e5e5;
+        }
+    }
+    td
+    {
+        height: 50px;
+        vertical-align: middle;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 150%;
+        font-size: 16px;
+        border: 1px solid #e1e1e1;
+    }
+}
